@@ -292,7 +292,7 @@
     },
     "solid_volume_fraction": {
       "type": "number",
-      "description": "Specifies the solid volume fraction of the microstructure, expressed as a percentage (e.g., 50 for 50%)."
+      "description": "Specifies the solid volume fraction of the microstructure, represented as a value between 0 and 1 (e.g., 0.5 for 50% solid volume fraction)."
     },
     "origin": {
       "type": "object",
@@ -794,32 +794,32 @@
     "properties": {
       "Stress": {
         "type": "string",
-        "enum": ["MPa"],
+        "default": "MPa",
         "description": "Unit of stress, default is MPa."
       },
       "Strain": {
         "type": "number",
-        "enum": [1],
+        "default": 1,
         "description": "Unit of strain, dimensionless."
       },
       "Length": {
         "type": "string",
-        "enum": ["mm"],
+        "default": "mm",
         "description": "Unit of length, default is mm."
       },
       "Force": {
         "type": "string",
-        "enum": ["N"],
+        "default": "N",
         "description": "Unit of force, default is Newton (N)."
       },
       "Angle": {
         "type": "string",
-        "enum": ["Radian"],
+        "default": "Radian",
         "description": "Unit of angle, default is Radians."
       },
       "Temperature": {
         "type": "string",
-        "enum": ["Kelvin"],
+        "default": "Kelvin",
         "description": "Unit of temperature, default is Kelvin."
       }
     },
